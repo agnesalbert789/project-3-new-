@@ -1,0 +1,266 @@
+/* giving the whole body styling*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Poster Container Styles */
+.poster-container {
+    position: relative; /* Ensure children are positioned relative to this container */
+    width: 250%;
+    max-width: 600px; /* Maximum width for the poster */
+    background-image: url('./images/outsiders textless.jpeg');
+
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+
+
+
+}
+
+
+/* Header Styles */
+.home-masthead
+{    position: absolute;
+    top: 35%; /* Adjusted to position the title vertically */
+    left: 5%; /* Adjusted to position the title horizontally */
+    transform: translateY(-50%);
+    text-align: left; /* Align text to the left */
+}
+.title-line {
+    display: block; /* Ensure each line is on a new line */
+}
+/* h1 styling */
+.home-masthead h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: cornsilk ;
+    margin: 0;
+
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Space out the letters  */
+    text-shadow:
+            4px 4px 0px rgba(0, 0, 0, 0.5),
+            -4px -4px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+
+
+/* Tagline Styles */
+.tagline{
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: calc(100% - 40px);
+    color: cornsilk;
+    text-align: left;
+    white-space: pre-line;
+    display: block;
+
+    max-height: 4.5em;
+}
+
+
+
+
+.author {
+    position: absolute;
+    top: 500px;
+    right:25%;
+
+    font-family: cursive sans-serif;
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    box-sizing: border-box;
+}
+/* Credits Styles */
+.credits {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 0.9em;
+    color: cornsilk;
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+    left:30px;
+    text-align:center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+
+
+
+}
+.credits2{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 0.5em;
+    color: cornsilk;
+    margin: 0 0 10px 0;
+    letter-spacing: 5px;
+    text-align:center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+
+/* Cast Section Styles */
+.cast-section {
+    margin-top: 100%;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cast Grid Styles */
+.cast-grid {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: nowrap;
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 5% 0;
+    max-width: 100%;
+    overflow-x: auto;
+
+}
+
+/* Cast Member Styles */
+.cast-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    padding: 0;
+    margin: 0;
+    width: 80px;
+
+}
+
+/* Cast Member Image Styles */
+.cast-member img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 5px;
+}
+
+/* Cast Member Name Styles */
+.cast-member p:nth-child(2) {
+    color: whitesmoke;
+    font-size: .8em;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: "Felix Titling", sans-serif;
+
+
+}
+
+.cast-member p:nth-child(3) {
+    font-style: italic;
+    color: crimson;
+    font-size: 0.8em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.7px;
+}
+.cast-member p:nth-child(4) {
+    font-style: italic;
+    color:whitesmoke;
+    font-size: 0.7em;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Additional Info Styles */
+.additional-info {
+    margin-top: auto;
+padding-top: 20px;
+    text-align: center;
+    color: orangered;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.additional-info p {
+    margin: 5px 0; /* Space between items */
+    font-family:"Footlight MT Light";
+    text-transform: uppercase;
+
+}
+.additional-info p:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 1em;
+    color: orangered ;
+    text-transform: uppercase;
+}
+
+
+.additional-info strong {
+    color: crimson; /* Make bold labels stand out */
+    font-size: 1em;
+
+}
+.movie-footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: crimson;
+
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+}
+
+.movie-footer p {
+    margin: 5px 0; /* Space between items */
+    font-family: 'Arial', sans-serif; /* Ensure consistency with body font */
+}
+
+.movie-footer a.footer-link {
+    color: cornsilk;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+.movie-footer a.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .movie-footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-footer {
+        padding: 5px;
+    }
+}
